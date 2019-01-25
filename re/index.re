@@ -9,11 +9,11 @@ module Styles = {
       flex(1.),
       justifyContent(Center),
       alignItems(Stretch),
-      backgroundColor(String("tomato")),
+      backgroundColor(String("white")),
     ]);
 
   let text = style([
-    color(String("#fff")),
+    color(String("#000")),
     fontSize(Float(24.)),
     textAlign(Center),
     padding(Pt(20.))
@@ -21,7 +21,7 @@ module Styles = {
 
   let buttonContainer = style([
     color(String("#f00")),
-    backgroundColor(String("blue")),
+    backgroundColor(String("gray")),
     flexDirection(Column)
   ]);
 
@@ -30,7 +30,11 @@ module Styles = {
   ]);
 
   let buttonItem = style([
-    backgroundColor(String("#550")),
+    color(String("#000")),
+    fontSize(Float(24.)),
+    textAlign(Center),
+    textAlignVertical(Center),
+    backgroundColor(String("white")),
     aspectRatio(1.),
     flex(1.),
     margin(Pt(1.))
@@ -49,28 +53,34 @@ module Main = {
         </Text>
         <View style = Styles.buttonContainer>
             <View style = Styles.buttonRow>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
+                <Text style=Styles.buttonItem></Text>
+                <Text style=Styles.buttonItem></Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("C"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("AC"))</Text>
             </View>
             <View style = Styles.buttonRow>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
+                <Text style=Styles.buttonItem>(ReasonReact.string("7"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("8"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("9"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("*"))</Text>
             </View>
             <View style = Styles.buttonRow>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
+                <Text style=Styles.buttonItem>(ReasonReact.string("4"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("5"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("6"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("/"))</Text>
             </View>
             <View style = Styles.buttonRow>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
-                <View style=Styles.buttonItem></View>
+                <Text style=Styles.buttonItem>(ReasonReact.string("1"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("2"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("3"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("-"))</Text>
+            </View>
+            <View style = Styles.buttonRow>
+                <Text style=Styles.buttonItem>(ReasonReact.string("0"))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("."))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("="))</Text>
+                <Text style=Styles.buttonItem>(ReasonReact.string("+"))</Text>
             </View>
         </View>
       </View>,
