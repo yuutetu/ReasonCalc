@@ -21,8 +21,19 @@ module Styles = {
 
   let buttonContainer = style([
     color(String("#f00")),
-    height(Pt(500.)),
-    backgroundColor(String("blue"))
+    backgroundColor(String("blue")),
+    flexDirection(Column)
+  ]);
+
+  let buttonRow = style([
+    flexDirection(Row)
+  ]);
+
+  let buttonItem = style([
+    backgroundColor(String("#550")),
+    aspectRatio(1.),
+    flex(1.),
+    margin(Pt(1.))
   ]);
 };
 
@@ -37,6 +48,30 @@ module Main = {
           (ReasonReact.string("Let's play with ReasonML!"))
         </Text>
         <View style = Styles.buttonContainer>
+            <View style = Styles.buttonRow>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+            </View>
+            <View style = Styles.buttonRow>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+            </View>
+            <View style = Styles.buttonRow>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+            </View>
+            <View style = Styles.buttonRow>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+                <View style=Styles.buttonItem></View>
+            </View>
         </View>
       </View>,
   };
